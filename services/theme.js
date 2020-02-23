@@ -6,5 +6,6 @@ export default {
     primary: '#579ABF',
     primaryHover: '#317499',
     primaryText: '#FDFDFD'
-  }
+  },
+  mobileBreakPoint: '600px'
 };
