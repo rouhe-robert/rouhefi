@@ -45,16 +45,13 @@ export default ({children}) => (
         .page-container {
           display: grid;
           grid-template-columns: [page-start] 0px [content-start] auto [content-end] 0px [page-end];
-          grid-template-rows: [top-menu-start] 25px [mobile-menu-start] auto [top-menu-end] 1fr [footer-start] 100px [footer-end];
+          grid-template-rows: [top-menu-start] auto [mobile-menu-start] auto [top-menu-end] 1fr [footer-start] 100px [footer-end];
           min-height: 100vh;
         }
 
         @media only screen and (min-width: ${theme.mobileBreakPoint}) {
           .page-container {
-            display: grid;
             grid-template-columns: [page-start] 1fr [content-start] 600px [content-end] 1fr [page-end];
-            grid-template-rows: [top-menu-start] 25px [mobile-menu-start] auto [top-menu-end] 1fr [footer-start] 100px [footer-end];
-            min-height: 100vh;
           }
         }
       `}
