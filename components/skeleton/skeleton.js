@@ -24,12 +24,12 @@ const Bootstrap = () => (
   </>
 );
 
-export default ({children}) => (
+export default ({children, translations}) => (
   <>
     <Head/>
     <GlobalStyle/>
     <div className="page-container">
-      <TopMenu/>
+      <TopMenu translations={translations}/>
       <div className="content">
         {children}
       </div>

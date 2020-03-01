@@ -3,7 +3,7 @@ import Skeleton from '../components/skeleton/skeleton';
 import translations from '../translations/translations';
 
 export default () => (
-  <Skeleton translations={translations.en}>
-    <Content translations={translations.en}/>
+  <Skeleton translations={translations.fi}>
+    <Content translations={translations.fi}/>
   </Skeleton>
 );

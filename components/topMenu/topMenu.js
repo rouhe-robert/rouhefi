@@ -4,7 +4,7 @@ import env from '../../.env';
 import MenuItems from './menuItems';
 import theme from '../../services/theme';
 
-export default () => (
+export default ({translations}) => (
   <>
     <div className="header">
       <Link href="#">
@@ -15,11 +15,11 @@ export default () => (
         </a>
       </Link>
       <div className="desktop-menu-items">
-        <MenuItems/>
+        <MenuItems translations={translations}/>
       </div>
     </div>
     <div className="mobile-menu">
-      <MenuItems/>
+      <MenuItems translations={translations}/>
     </div>
     <style jsx>
       {`
