@@ -1,21 +1,21 @@
 import Link from 'next/link';
 
-import theme from '../../services/theme';
+import theme from '../../../services/theme';
 
 export default ({translations}) => (
   <>
     <div className="menu-items">
       <div className="menu-item">
-        <Link href={translations.header.cv.url}>
+        <Link href={translations.sections.cv.url}>
           <a>
-            <p>{translations.header.cv.name}</p>
+            <p>{translations.sections.cv.name}</p>
           </a>
         </Link>
       </div>
       <div className="menu-item">
-        <Link href={translations.header.contact.url}>
+        <Link href={translations.sections.contact.url}>
           <a>
-            <p>{translations.header.contact.name}</p>
+            <p>{translations.sections.contact.name}</p>
           </a>
         </Link>
       </div>

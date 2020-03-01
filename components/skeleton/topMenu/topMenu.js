@@ -1,12 +1,14 @@
 import Link from 'next/link';
 
-import env from '../../.env';
+import env from '../../../.env';
 import MenuItems from './menuItems';
-import theme from '../../services/theme';
+import theme from '../../../services/theme';
 
 export default ({translations}) => (
   <>
     <div className="header">
+    </div>
+    <div className="header-content">
       <Link href="#">
         <a>
           <h3 className="website-title">
@@ -32,6 +34,10 @@ export default ({translations}) => (
         .header {
           grid-area: top-menu-start / page-start / mobile-menu-start / page-end;
           background-color: ${theme.colors.primary};
+        }
+
+        .header-content {
+          grid-area: top-menu-start / content-start / mobile-menu-start / content-end;
         }
 
         .desktop-menu-items {

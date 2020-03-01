@@ -2,7 +2,7 @@ import Footer from './footer';
 import GlobalStyle from './globalStyle';
 import Head from './head';
 import theme from '../../services/theme';
-import TopMenu from '../topMenu/topMenu';
+import TopMenu from './topMenu/topMenu';
 
 const Bootstrap = () => (
   <>
@@ -33,7 +33,7 @@ export default ({children, translations}) => (
       <div className="content">
         {children}
       </div>
-      <Footer/>
+      <Footer translations={translations}/>
     </div>
     <Bootstrap/>
     <style jsx>
@@ -45,13 +45,13 @@ export default ({children, translations}) => (
         .page-container {
           display: grid;
           grid-template-columns: [page-start] 0px [content-start] auto [content-end] 0px [page-end];
-          grid-template-rows: [top-menu-start] auto [mobile-menu-start] auto [top-menu-end] 1fr [footer-start] 100px [footer-end];
+          grid-template-rows: [top-menu-start] auto [mobile-menu-start] auto [top-menu-end] 1fr [footer-start] min-content [footer-end];
           min-height: 100vh;
         }
 
         @media only screen and (min-width: ${theme.mobileBreakPoint}) {
           .page-container {
-            grid-template-columns: [page-start] 1fr [content-start] 600px [content-end] 1fr [page-end];
+            grid-template-columns: [page-start] 1fr [content-start] ${theme.content.maxWidth} [content-end] 1fr [page-end];
           }
         }
       `}

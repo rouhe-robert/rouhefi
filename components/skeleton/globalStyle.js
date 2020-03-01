@@ -16,6 +16,10 @@ export default () => (
     h3 {
       font-size: 1.5rem;
     }
+
+    .row {
+      margin-right: 0;
+    }
   `}
   </style>
 );

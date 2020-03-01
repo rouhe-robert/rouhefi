@@ -7,5 +7,8 @@ export default {
     primaryHover: '#317499',
     primaryText: '#FDFDFD'
   },
-  mobileBreakPoint: '600px'
+  content: {
+    maxWidth: '768px'
+  },
+  mobileBreakPoint: '768px'
 };
