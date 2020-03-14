@@ -13,6 +13,7 @@ export default ({translations}) => (
         <p key={part}>{part}</p>
       ))
     }
+    <p>{translations.sections.description['This website\'s source code can be found in']} <a href={env.github}>{translations.sections.description.here}</a>.</p>
     <style jsx>
     {`
       p {

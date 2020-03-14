@@ -33,6 +33,10 @@ export default {
         workExperience: {
           title: 'Work experience'
         }
+      },
+      description: {
+        here: 'here',
+        'This website\'s source code can be found in': 'This website\'s source code can be found in'
       }
     },
   },
@@ -70,6 +74,10 @@ export default {
         workExperience: {
           title: 'Työkokemus'
         }
+      },
+      description: {
+        here: 'täältä',
+        'This website\'s source code can be found in': 'Tämän verkkosivun lähdekoodi löytyy'
       }
     }
   }
