@@ -21,7 +21,7 @@ export default ({translations}) => {
         env.cv.education.filter(
           educationItem => educationItem.title[translations.code] !== null
         ).map(educationItem => (
-          <div className="education-item">
+          <div className="education-item" key={'education-item-' + educationItem.title[translations.code]}>
             <p><strong>{getEducationItemTitle(educationItem)}</strong></p>
             {educationItem.description === null ? null : (<p>{educationItem.description[translations.code]}</p>)}
             {educationItem.thesis === null ? null : (<p>{educationItem.thesis[translations.code]}</p>)}

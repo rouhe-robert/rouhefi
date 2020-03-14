@@ -9,51 +9,49 @@ const getSkillBoxes = translations => env.cv.skills.map(skill => (
   />
 ));
 
-const getSkillBoxesInColumns = translations => [
-  (
-    <>
-      <div className="row">
-        <div className="col-md-6">
-          {
-            env.cv.skills.filter(
-              skill => skill.column === 1
-            ).map(skill => (
-              <SkillBox
-                skill={skill}
-                key={'skill-box-' + skill.name.en}
-                translations={translations}
-              />
-            ))
-          }
-        </div>
-        <div className="col-md-6">
-          {
-            env.cv.skills.filter(
-              skill => skill.column === 2
-            ).map(skill => (
-              <SkillBox
-                skill={skill}
-                key={'skill-box-' + skill.name.en}
-                translations={translations}
-              />
-            ))
-          }
-        </div>
+const getSkillBoxesInColumns = translations => (
+  <>
+    <div className="row">
+      <div className="col-md-6">
+        {
+          env.cv.skills.filter(
+            skill => skill.column === 1
+          ).map(skill => (
+            <SkillBox
+              skill={skill}
+              key={'skill-box-' + skill.name.en}
+              translations={translations}
+            />
+          ))
+        }
       </div>
-      <style jsx>
-        {`
-          .col-md-6:first-child {
-            padding-left: 0;
-          }
+      <div className="col-md-6">
+        {
+          env.cv.skills.filter(
+            skill => skill.column === 2
+          ).map(skill => (
+            <SkillBox
+              skill={skill}
+              key={'skill-box-' + skill.name.en}
+              translations={translations}
+            />
+          ))
+        }
+      </div>
+    </div>
+    <style jsx>
+      {`
+        .col-md-6:first-child {
+          padding-left: 0;
+        }
 
-          .col-md-6:last-child {
-            padding-right: 0;
-          }
-        `}
-      </style>
-    </>
-  )
-];
+        .col-md-6:last-child {
+          padding-right: 0;
+        }
+      `}
+    </style>
+  </>
+);
 
 export default ({translations}) => (
   <>
