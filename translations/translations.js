@@ -20,11 +20,15 @@ export default {
         url: '#contact'
       },
       cv: {
+        education: {
+          title: 'Education'
+        },
         id: 'cv',
         name: 'CV',
         skills: {
           title: 'Skills'
         },
+        title: 'CV',
         url: '#cv',
         workExperience: {
           title: 'Work experience'
@@ -53,11 +57,15 @@ export default {
         url: '#yhteystiedot'
       },
       cv: {
+        education: {
+          title: 'Koulutus'
+        },
         id: 'cv',
         name: 'CV',
         skills: {
           title: 'Osaaminen'
         },
+        title: 'CV',
         url: '#cv',
         workExperience: {
           title: 'Työkokemus'
