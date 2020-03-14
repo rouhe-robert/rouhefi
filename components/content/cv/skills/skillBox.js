@@ -1,25 +1,25 @@
 import Stars from './stars';
 
-export default ({item, translations}) => (
+export default ({skill, translations}) => (
   <>
     <table>
       <tbody>
-        <tr key={'item-' + item.name.en}>
+        <tr key={'skill-' + skill.name.en}>
           <td>
-            <h5>{item.name[translations.code]}</h5>
+            <h5>{skill.name[translations.code]}</h5>
           </td>
           <td>
-            <Stars item={item} size="md"/>
+            <Stars skill={skill} size="md"/>
           </td>
         </tr>
         {
-          item.subitems.map(subitem => (
-            <tr key={'item-' + subitem.name.en}>
+          skill.subskills.map(subskill => (
+            <tr key={'skill-subskill-' + subskill.name.en}>
               <td>
-                <p>{subitem.name[translations.code]}</p>
+                <p>{subskill.name[translations.code]}</p>
               </td>
               <td>
-                <Stars item={subitem} size="sm"/>
+                <Stars skill={subskill} size="sm"/>
               </td>
             </tr>
           ))

@@ -1,11 +1,11 @@
-import theme from "../../../services/theme";
+import theme from "../../../../services/theme";
 
-export default ({item, size}) => {
+export default ({skill, size}) => {
 
   const getClasses = starNumber => [
     'fas',
     'fa-star',
-    starNumber <= item.stars ? 'active-star' : 'disabled-star',
+    starNumber <= skill.stars ? 'active-star' : 'disabled-star',
     size + '-star'
   ].join(
     ' '
@@ -18,7 +18,7 @@ export default ({item, size}) => {
           [1, 2, 3, 4, 5].map(starNumber => (
             <i
               className={getClasses(starNumber)}
-              key={'star-' + item.name.en + '-' + starNumber}
+              key={'star-' + skill.name.en + '-' + starNumber}
             />
           ))
         }

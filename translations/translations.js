@@ -22,12 +22,15 @@ export default {
       cv: {
         id: 'cv',
         name: 'CV',
-        url: '#cv'
+        skills: {
+          title: 'Skills'
+        },
+        url: '#cv',
+        workExperience: {
+          title: 'Work experience'
+        }
       }
     },
-    skills: {
-      title: 'Skills'
-    }
   },
   fi: {
     code: 'fi',
@@ -52,11 +55,14 @@ export default {
       cv: {
         id: 'cv',
         name: 'CV',
-        url: '#cv'
+        skills: {
+          title: 'Osaaminen'
+        },
+        url: '#cv',
+        workExperience: {
+          title: 'Työkokemus'
+        }
       }
-    },
-    skills: {
-      title: 'Osaaminen'
     }
   }
 }

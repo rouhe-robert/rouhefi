@@ -1,10 +1,10 @@
-import env from '../../../.env';
+import env from '../../../../.env';
 import SkillBox from './skillBox';
 
-const getSkillBoxes = translations => env.skills.items.map(item => (
+const getSkillBoxes = translations => env.cv.skills.map(skill => (
   <SkillBox
-    item={item}
-    key={'item-box-mobile-' + item.name.en}
+    skill={skill}
+    key={'skill-box-mobile-' + skill.name.en}
     translations={translations}
   />
 ));
@@ -15,12 +15,12 @@ const getSkillBoxesInColumns = translations => [
       <div className="row">
         <div className="col-md-6">
           {
-            env.skills.items.filter(
-              item => item.column === 1
-            ).map(item => (
+            env.cv.skills.filter(
+              skill => skill.column === 1
+            ).map(skill => (
               <SkillBox
-                item={item}
-                key={'item-box-' + item.name.en}
+                skill={skill}
+                key={'skill-box-' + skill.name.en}
                 translations={translations}
               />
             ))
@@ -28,12 +28,12 @@ const getSkillBoxesInColumns = translations => [
         </div>
         <div className="col-md-6">
           {
-            env.skills.items.filter(
-              item => item.column === 2
-            ).map(item => (
+            env.cv.skills.filter(
+              skill => skill.column === 2
+            ).map(skill => (
               <SkillBox
-                item={item}
-                key={'item-box-' + item.name.en}
+                skill={skill}
+                key={'skill-box-' + skill.name.en}
                 translations={translations}
               />
             ))
@@ -57,7 +57,7 @@ const getSkillBoxesInColumns = translations => [
 
 export default ({translations}) => (
   <>
-    <h3>{translations.skills.title}</h3>
+    <h3>{translations.sections.cv.skills.title}</h3>
     <div className="container d-none d-md-block">
       {getSkillBoxesInColumns(translations)}
     </div>

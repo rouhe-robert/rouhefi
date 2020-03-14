@@ -1,11 +1,11 @@
 import Description from './description';
-import Skills from './skills/skills';
+import CV from './cv/cv';
 
 export default ({translations}) => (
   <>
     <div>
       <Description translations={translations} />
-      <Skills translations={translations} />
+      <CV translations={translations} />
     </div>
     <style jsx>
       {`
