@@ -1,6 +1,10 @@
 export default () => (
   <style jsx global>
   {`
+    a:hover {
+      text-decoration: none;
+    }
+
     body {
       font-family: 'Nunito', sans-serif;
     }

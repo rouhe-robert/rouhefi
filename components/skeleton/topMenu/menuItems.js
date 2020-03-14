@@ -1,3 +1,4 @@
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Link from 'next/link';
 
 import theme from '../../../services/theme';
@@ -6,18 +7,14 @@ export default ({translations}) => (
   <>
     <div className="menu-items">
       <div className="menu-item">
-        <Link href={translations.sections.cv.url}>
-          <a>
-            <p>{translations.sections.cv.name}</p>
-          </a>
-        </Link>
+        <AnchorLink href={translations.sections.cv.url}>
+          <p>{translations.sections.cv.name}</p>
+        </AnchorLink>
       </div>
       <div className="menu-item">
-        <Link href={translations.sections.contact.url}>
-          <a>
-            <p>{translations.sections.contact.name}</p>
-          </a>
-        </Link>
+        <AnchorLink href={translations.sections.contact.url}>
+          <p>{translations.sections.contact.name}</p>
+        </AnchorLink>
       </div>
       <div className="menu-item">
         <Link href={translations.header.toggleToLanguage.url}>
@@ -29,12 +26,12 @@ export default ({translations}) => (
     </div>
     <style jsx>
       {`
-        a {
+        a:hover {
           text-decoration: none;
         }
 
-        .menu-item {
-
+        .anchor-link:hover {
+          text-decoration: none !important;
         }
 
         .menu-items {
