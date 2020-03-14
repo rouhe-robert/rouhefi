@@ -10,7 +10,7 @@ export default ({translations}) => (
       ).filter(
         part => part !== ''
       ).map(part => (
-        <p>{part}</p>
+        <p key={part}>{part}</p>
       ))
     }
     <style jsx>

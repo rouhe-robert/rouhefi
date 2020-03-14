@@ -1,9 +1,11 @@
 import Description from './description';
+import Skills from './skills/skills';
 
 export default ({translations}) => (
   <>
     <div>
-      <Description translations={translations}/>
+      <Description translations={translations} />
+      <Skills translations={translations} />
     </div>
     <style jsx>
       {`

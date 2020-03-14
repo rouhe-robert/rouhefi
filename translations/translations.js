@@ -7,9 +7,6 @@ export default {
       'Company name': 'Company name',
       Contact: 'Contact'
     },
-    cv: {
-      hello: 'EN hello'
-    },
     header: {
       toggleToLanguage: {
         code: 'FI',
@@ -27,6 +24,9 @@ export default {
         name: 'CV',
         url: '#cv'
       }
+    },
+    skills: {
+      title: 'Skills'
     }
   },
   fi: {
@@ -36,9 +36,6 @@ export default {
       'Business ID': 'Y-tunnus',
       'Company name': 'Toiminimi',
       Contact: 'Ota yhteyttä'
-    },
-    cv: {
-      hello: 'FI hello'
     },
     header: {
       toggleToLanguage: {
@@ -57,6 +54,9 @@ export default {
         name: 'CV',
         url: '#cv'
       }
+    },
+    skills: {
+      title: 'Osaaminen'
     }
   }
 }
