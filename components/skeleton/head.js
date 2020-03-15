@@ -13,6 +13,9 @@ export default () => (
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossOrigin="anonymous"
     ></link>
+    <script type="text/javascript">
+      {'window.FontAwesomeConfig = { autoReplaceSvg: false };'}
+    </script>
     <link rel="stylesheet" href="third-party/fontawesome/css/all.min.css"></link>
     <script src="third-party/fontawesome/js/all.min.js"></script>
   </Head>

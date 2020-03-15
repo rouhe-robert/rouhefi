@@ -19,7 +19,8 @@ export default ({skill, size}) => {
             <i
               className={getClasses(starNumber)}
               key={'star-' + skill.name.en + '-' + starNumber}
-            />
+            >
+            </i>
           ))
         }
       </div>
