@@ -18,5 +18,15 @@ export default () => (
     </script>
     <link rel="stylesheet" href="third-party/fontawesome/css/all.min.css"></link>
     <script src="third-party/fontawesome/js/all.min.js"></script>
+    <script async src={'https://www.googletagmanager.com/gtag/js?id=' + env.googleAnalytics}></script>
+    <script>
+      {`
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', '` + env.googleAnalytics + `');
+      `}
+    </script>
+
   </Head>
 );
