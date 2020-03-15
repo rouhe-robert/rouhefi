@@ -22,7 +22,7 @@ export default ({translations}) => (
         }
 
         h1 {
-          border-bottom: 1px solid ${theme.colors.grey};
+          border-bottom: 2px solid ${theme.colors.lightGrey};
           margin: 1.5rem 1rem 1.5rem 1rem;
         }
       `}
