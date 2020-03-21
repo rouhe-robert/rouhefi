@@ -26,7 +26,7 @@ const Bootstrap = () => (
 
 export default ({children, translations}) => (
   <>
-    <Head/>
+    <Head translations={translations}/>
     <GlobalStyle/>
     <div className="page-container">
       <TopMenu translations={translations}/>

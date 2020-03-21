@@ -1,10 +1,10 @@
 import Head from 'next/head';
 import env from '../../.env';
 
-export default () => (
+export default ({translations}) => (
   <Head>
     <title>{env.website.name}</title>
-    <meta name="description" content={env.website.description}/>
+    <meta name="description" content={env.website.description[translations.code]}/>
     <meta charSet="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
     <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet"></link>
