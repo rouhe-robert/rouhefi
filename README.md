@@ -11,5 +11,4 @@ Copy content.json.example to content.json and fill the data in it so that the pa
 npm run dev
 
 ## Run in production
-npm run build\
-npm run export
+npm run build
