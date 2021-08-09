@@ -1,7 +1,7 @@
-import env from '../../../../.env';
+import content from '../../../../content.json';
 import SkillBox from './skillBox';
 
-const getSkillBoxes = translations => env.cv.skills.map(skill => (
+const getSkillBoxes = translations => content.cv.skills.map(skill => (
   <SkillBox
     skill={skill}
     key={'skill-box-mobile-' + skill.name.en}
@@ -14,7 +14,7 @@ const getSkillBoxesInColumns = translations => (
     <div className="row">
       <div className="col-md-6">
         {
-          env.cv.skills.filter(
+          content.cv.skills.filter(
             skill => skill.column === 1
           ).map(skill => (
             <SkillBox
@@ -27,7 +27,7 @@ const getSkillBoxesInColumns = translations => (
       </div>
       <div className="col-md-6">
         {
-          env.cv.skills.filter(
+          content.cv.skills.filter(
             skill => skill.column === 2
           ).map(skill => (
             <SkillBox

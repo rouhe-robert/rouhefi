@@ -1,4 +1,4 @@
-import env from '../../.env';
+import content from '../../content.json';
 import theme from '../../services/theme';
 
 export default ({translations}) => (
@@ -8,23 +8,23 @@ export default ({translations}) => (
         <div className="row">
           <div className="col-md-4 footer-column">
             <p>
-              <strong>{translations.contact['Company name']}: {env.contact.companyName}</strong><br />
-              {translations.contact['Business ID']}: {env.contact.businessId}
+              <strong>{translations.contact['Company name']}: {content.contact.companyName}</strong><br />
+              {translations.contact['Business ID']}: {content.contact.businessId}
             </p>
           </div>
           <div className="col-md-4 footer-column">
             <p>
               <strong>{translations.contact.Contact}</strong><br />
-              {env.contact.email}<br />
-              {env.contact.phone}
+              {content.contact.email}<br />
+              {content.contact.phone}
             </p>
           </div>
           <div className="col-md-4 footer-column">
             <p>
               <strong>{translations.contact.Address}</strong><br />
-              {env.contact.address.address}<br />
-              {env.contact.address.postalCode}<br />
-              {env.contact.address.city}<br />
+              {content.contact.address.address}<br />
+              {content.contact.address.postalCode}<br />
+              {content.contact.address.city}<br />
             </p>
           </div>
         </div>

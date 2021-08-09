@@ -1,6 +1,6 @@
-import env from '../.env';
+import content from '../content.json';
 
-const websiteBaseUrlWithProtocol = env.website.protocol + '://' + env.website.url;
+const websiteBaseUrlWithProtocol = content.website.protocol + '://' + content.website.url;
 
 export default () => (`
   <?xml version="1.0" encoding="UTF-8"?>

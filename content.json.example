@@ -1,0 +1,71 @@
+{
+  "contact": {
+    "address": {
+      "address": "",
+      "city": "",
+      "postalCode": ""
+    },
+    "businessId": "",
+    "companyName": "",
+    "email": "",
+    "phone": ""
+  },
+  "content": {
+    "en": {
+      "description": ""
+    },
+    "fi": {
+      "description": ""
+    }
+  },
+  "cv": {
+    "education": [
+      {
+        "city": { "en": "", "fi": "" },
+        "country": { "en": "", "fi": "" },
+        "description": { "en": "", "fi": "" },
+        "end": "",
+        "school": { "en": "", "fi": "" },
+        "start": "",
+        "thesis": { "en": "", "fi": "" },
+        "title": { "en": "", "fi": "" }
+      }
+    ],
+    "skills": [
+      {
+        "column": 1,
+        "name": { "en": "", "fi": "" },
+        "stars": 0,
+        "subskills": [
+          {
+            "name": { "en": "", "fi": "" },
+            "stars": 0
+          }
+        ]
+      }
+    ],
+    "workExperience": [
+      {
+        "city": { "en": "", "fi": "" },
+        "country": { "en": "", "fi": "" },
+        "description": { "en": "", "fi": ""},
+        "employer": "",
+        "end": "",
+        "start": "",
+        "title": { "en": "", "fi": ""}
+      }
+    ]
+  },
+  "github": "",
+  "googleAnalytics": "",
+  "owner": {
+    "name": ""
+  },
+  "website": {
+    "description": { "en": "", "fi": "" },
+    "name": "",
+    "protocol": "",
+    "url": "",
+    "urlCapital": ""
+  }
+}

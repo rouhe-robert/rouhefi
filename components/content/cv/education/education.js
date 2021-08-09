@@ -1,4 +1,4 @@
-import env from '../../../../.env';
+import content from '../../../../content.json';
 
 export default ({translations}) => {
 
@@ -18,7 +18,7 @@ export default ({translations}) => {
     <>
       <h3>{translations.sections.cv.education.title}</h3>
       {
-        env.cv.education.filter(
+        content.cv.education.filter(
           educationItem => educationItem.title[translations.code] !== null
         ).map(educationItem => (
           <div className="education-item" key={'education-item-' + educationItem.title[translations.code]}>

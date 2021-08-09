@@ -1,10 +1,10 @@
 import Head from 'next/head';
-import env from '../../.env';
+import content from '../../content.json';
 
 export default ({translations}) => (
   <Head>
-    <title>{env.website.name}</title>
-    <meta name="description" content={env.website.description[translations.code]}/>
+    <title>{content.website.name}</title>
+    <meta name="description" content={content.website.description[translations.code]}/>
     <meta charSet="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
     <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet"></link>
@@ -19,13 +19,13 @@ export default ({translations}) => (
     </script>
     <link rel="stylesheet" href="third-party/fontawesome/css/all.min.css"></link>
     <script src="third-party/fontawesome/js/all.min.js"></script>
-    <script async src={'https://www.googletagmanager.com/gtag/js?id=' + env.googleAnalytics}></script>
+    <script async src={'https://www.googletagmanager.com/gtag/js?id=' + content.googleAnalytics}></script>
     <script>
       {`
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-        gtag('config', '` + env.googleAnalytics + `');
+        gtag('config', '` + content.googleAnalytics + `');
       `}
     </script>
 

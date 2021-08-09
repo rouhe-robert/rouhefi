@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-import env from '../../../.env';
+import content from '../../../content.json';
 import MenuItems from './menuItems';
 import theme from '../../../services/theme';
 
@@ -12,7 +12,7 @@ export default ({translations}) => (
       <Link href="#">
         <a>
           <h3 className="website-title">
-            {env.owner.name}
+            {content.owner.name}
           </h3>
         </a>
       </Link>

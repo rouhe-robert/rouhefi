@@ -1,4 +1,4 @@
-import env from '../../../../.env';
+import content from '../../../../content.json';
 
 export default ({translations}) => {
 
@@ -18,7 +18,7 @@ export default ({translations}) => {
     <>
       <h3>{translations.sections.cv.workExperience.title}</h3>
       {
-        env.cv.workExperience.map(experience => (
+        content.cv.workExperience.map(experience => (
           <div className="experience" key={'experience-item-' + experience.title['en']}>
             <p><strong>{getExperienceTitle(experience)}</strong></p>
             <p>{experience.description[translations.code]}</p>
