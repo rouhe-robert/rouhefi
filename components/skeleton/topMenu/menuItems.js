@@ -18,9 +18,7 @@ export default ({translations}) => (
       </div>
       <div className="menu-item">
         <Link href={translations.header.toggleToLanguage.url}>
-          <a>
-            <p>{translations.header.toggleToLanguage.code}</p>
-          </a>
+          <p>{translations.header.toggleToLanguage.code}</p>
         </Link>
       </div>
     </div>

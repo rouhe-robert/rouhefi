@@ -9,12 +9,10 @@ export default ({translations}) => (
     <div className="header">
     </div>
     <div className="header-content">
-      <Link href="#">
-        <a>
-          <h3 className="website-title">
-            {content.owner.name}
-          </h3>
-        </a>
+      <Link href="#" className="website-title-link">
+        <h3 className="website-title">
+          {content.owner.name}
+        </h3>
       </Link>
       <div className="desktop-menu-items">
         <MenuItems translations={translations}/>
@@ -52,6 +50,10 @@ export default ({translations}) => (
         .website-title {
           float: left;
           padding: 0 1rem;
+        }
+
+        .website-title-link {
+          display: inline-block;
         }
 
         @media only screen and (min-width: ${theme.mobileBreakPoint}) {
