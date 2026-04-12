@@ -40,6 +40,8 @@ export default ({children, translations}) => (
       {`
         .content {
           grid-area: top-menu-end / content-start / footer-start / content-end;
+          margin: 1.25rem 0 2rem;
+          padding: 1.5rem 0;
         }
 
         .page-container {
@@ -52,6 +54,14 @@ export default ({children, translations}) => (
         @media only screen and (min-width: ${theme.mobileBreakPoint}) {
           .page-container {
             grid-template-columns: [page-start] 1fr [content-start] ${theme.content.maxWidth} [content-end] 1fr [page-end];
+          }
+
+          .content {
+            background: rgba(253, 253, 253, 0.9);
+            border: 1px solid ${theme.colors.lightGrey};
+            border-radius: 18px;
+            box-shadow: 0 14px 30px rgba(77, 83, 89, 0.08);
+            padding: 2rem 0.5rem;
           }
         }
       `}

@@ -10,7 +10,7 @@ export default ({translations}) => (
     <style jsx>
       {`
         div {
-          margin: 1.5rem 0;
+          margin: 0.5rem 0;
         }
       `}
     </style>

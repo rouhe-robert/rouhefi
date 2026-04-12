@@ -7,7 +7,7 @@ export default ({translations}) => (
     <meta name="description" content={content.website.description[translations.code]}/>
     <meta charSet="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet"></link>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,800&display=swap&subset=latin,latin-ext" rel="stylesheet"></link>
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"

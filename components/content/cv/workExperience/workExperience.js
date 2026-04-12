@@ -28,11 +28,25 @@ export default ({translations}) => {
       <style jsx>
         {`
           .experience {
-            margin: 1rem 0;
+            background: #ffffff;
+            border: 1px solid #E1E1E1;
+            border-radius: 14px;
+            box-shadow: 0 8px 18px rgba(77, 83, 89, 0.06);
+            margin: 1rem 1rem;
+            padding: 0.9rem 0;
           }
 
           h3, h5, p {
             margin: 0 1rem;
+          }
+
+          h3 {
+            color: #4D5359;
+            margin-bottom: 0.8rem;
+          }
+
+          p + p {
+            margin-top: 0.5rem;
           }
         `}
       </style>

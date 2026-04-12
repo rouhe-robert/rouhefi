@@ -18,12 +18,14 @@ export default ({translations}) => (
     <style jsx>
       {`
         .cv-section {
-          margin-top: 2.5rem;
+          margin-top: 2rem;
         }
 
         h1 {
           border-bottom: 2px solid ${theme.colors.lightGrey};
-          margin: 1.5rem 1rem 1.5rem 1rem;
+          color: ${theme.colors.darkGrey};
+          margin: 1.5rem 1rem 1rem 1rem;
+          padding-bottom: 0.5rem;
         }
       `}
     </style>

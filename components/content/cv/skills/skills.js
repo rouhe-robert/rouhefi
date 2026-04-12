@@ -56,16 +56,33 @@ const getSkillBoxesInColumns = translations => (
 export default ({translations}) => (
   <>
     <h3>{translations.sections.cv.skills.title}</h3>
-    <div className="container d-none d-md-block">
-      {getSkillBoxesInColumns(translations)}
+    <div className="skills-section skills-section-desktop">
+      <div className="container d-none d-md-block">
+        {getSkillBoxesInColumns(translations)}
+      </div>
     </div>
-    <div className="d-sm-block d-md-none">
+    <div className="skills-section skills-section-mobile d-sm-block d-md-none">
       {getSkillBoxes(translations)}
     </div>
     <style jsx>
     {`
-      div, h3 {
+      h3 {
+        color: #4D5359;
         margin: 0 1rem 1rem 1rem;
+      }
+
+      .skills-section {
+        margin: 0 1rem 1rem 1rem;
+      }
+
+      .skills-section-desktop .container {
+        padding-left: 0;
+        padding-right: 0;
+      }
+
+      .skills-section-desktop :global(.row) {
+        margin-left: 0;
+        margin-right: 0;
       }
     `}
     </style>

@@ -17,7 +17,9 @@ export default ({translations}) => (
     <style jsx>
     {`
       p {
-        margin: 0 1rem 1rem 1rem;
+        color: #4D5359;
+        margin: 0 1rem 1.1rem 1rem;
+        max-width: 68ch;
       }
     `}
     </style>

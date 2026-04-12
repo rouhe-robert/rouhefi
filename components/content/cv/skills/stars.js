@@ -35,7 +35,9 @@ export default ({skill, size}) => {
           }
 
           div {
-            float: right;
+            display: flex;
+            gap: 0.2rem;
+            justify-content: flex-end;
           }
 
           .md-star {
